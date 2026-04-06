@@ -1,0 +1,84 @@
+# Python Programming Repository
+# Demonstrating basic concepts
+
+# -----------------------------
+# 1. Variables and Data Types
+# -----------------------------
+x = 10
+y = 3.5
+name = "Vaishnavi"
+
+print("Integer:", x)
+print("Float:", y)
+print("String:", name)
+
+
+# -----------------------------
+# 2. Input / Output
+# -----------------------------
+num = int(input("Enter a number: "))
+print("You entered:", num)
+
+
+# -----------------------------
+# 3. Loop Example
+# -----------------------------
+print("\nFor Loop Example:")
+for i in range(5):
+    print("Number:", i)
+
+
+# -----------------------------
+# 4. Decision Making
+# -----------------------------
+print("\nIf-Else Example:")
+if num % 2 == 0:
+    print("Even Number")
+else:
+    print("Odd Number")
+
+
+# -----------------------------
+# 5. Function Example
+# -----------------------------
+def greet(name):
+    return "Hello " + name
+
+print("\nFunction Output:", greet("Student"))
+
+
+# -----------------------------
+# 6. List Example
+# -----------------------------
+numbers = [1, 2, 3, 4, 5]
+print("\nList:", numbers)
+
+
+# -----------------------------
+# 7. Searching (Linear Search)
+# -----------------------------
+search = int(input("\nEnter number to search: "))
+found = False
+
+for i in numbers:
+    if i == search:
+        found = True
+        break
+
+if found:
+    print("Number Found")
+else:
+    print("Number Not Found")
+
+
+# -----------------------------
+# 8. Sorting (Bubble Sort)
+# -----------------------------
+arr = [5, 2, 8, 1, 3]
+
+for i in range(len(arr)):
+    for j in range(len(arr) - i - 1):
+        if arr[j] > arr[j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+print("\nSorted List:", arr)
